@@ -10,7 +10,7 @@ International students may experience higher risks of mental health difficulties
 - Acculturative stress (stress from adapting to a new culture)  
 - Length of stay in the host country  
 
-## Analysis
+## Analysis 
 
 ![Mental Health Chart](mentalhealth.png)
 
