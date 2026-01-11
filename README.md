@@ -44,8 +44,10 @@ The analysis explores relationships between student type, depression, social con
 - **Focus areas**: Social connectedness, acculturative stress, and length of stay.
 
 ### Example Charts
- **Mental Health Overview by Length of Stay**  
-   ![Mental Health Chart](MentalHealthMetrics.jpg)
+ **Mental Health Overview by Length of Stay** 
+ 
+   ![Mental Health Chart](MentalHealthMetrics.png)
+   
    This horizontal bar chart illustrates average depression (PHQ), social connectedness (SCS), and acculturative stress (ASISS) scores by length of stay, showing patterns in mental health outcomes based on time spent in Japan.
    
 ## Key Findings
