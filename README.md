@@ -1,95 +1,78 @@
 # International Student Mental Health Analysis
 
-![Mental Health Chart](mentalhealth.jpg)
+![Mental Health Overview](mentalhealth.jpg)
 
-**Exploring the impact of social connectedness, acculturative stress, and length of stay on depression among international students at a Japanese university.**
-
----
+This project explores mental health patterns among international students at a Japanese university, focusing on depression, social connectedness, and acculturative stress. The goal is to identify trends that can help universities provide better support for student well-being.
 
 ## Table of Contents
-- [Overview](#overview)  
-- [Data Description](#data-description)  
-- [Analysis](#analysis)  
-- [Key Findings](#key-findings)  
-- [Conclusion](#conclusion)  
-- [How to Run](#how-to-run)  
+- [Overview](#overview)
+- [Data Description](#data-description)
+- [Analysis](#analysis)
+- [Key Findings](#key-findings)
+- [Conclusion](#conclusion)
+- [How to Run](#how-to-run)
 - [Technologies Used](#technologies-used)
 
----
-
 ## Overview
-International students may experience higher risks of mental health difficulties than domestic students.  
-This project investigates:
+International students often face unique challenges that may increase the risk of mental health difficulties. This project investigates:
 
-- **Social connectedness**: measured with the SCS test  
-- **Acculturative stress**: measured with the ASISS test  
-- **Length of stay**: time spent in Japan  
+- **Social connectedness** – measured with the SCS test
+- **Acculturative stress** – measured with the ASISS test
+- **Length of stay** – time spent in Japan
 
-The goal is to identify patterns that may help universities support international students’ mental well-being.
-
----
+The analysis aims to identify patterns in mental health outcomes based on how long students have been in Japan.
 
 ## Data Description
-The `students` dataset includes:
+The dataset contains the following fields:
 
-| Field Name       | Description                                      |
-|-----------------|--------------------------------------------------|
-| `inter_dom`      | Type of student: international or domestic      |
-| `japanese_cate`  | Japanese language proficiency                    |
-| `english_cate`   | English language proficiency                     |
-| `academic`       | Current academic level: undergraduate or graduate |
-| `age`            | Current age of student                           |
-| `stay`           | Current length of stay in years                  |
-| `todep`          | Total score of depression (PHQ-9 test)          |
-| `tosc`           | Total score of social connectedness (SCS test)  |
-| `toas`           | Total score of acculturative stress (ASISS test)|
-
----
+| Field Name     | Description                                         |
+|----------------|-----------------------------------------------------|
+| `inter_dom`    | Type of student: international or domestic         |
+| `japanese_cate`| Japanese language proficiency                       |
+| `english_cate` | English language proficiency                        |
+| `academic`     | Current academic level: undergraduate or graduate  |
+| `age`          | Age of student                                      |
+| `stay`         | Current length of stay in years                     |
+| `todep`        | Total depression score (PHQ-9)                     |
+| `tosc`         | Total social connectedness score (SCS)            |
+| `toas`         | Total acculturative stress score (ASISS)          |
 
 ## Analysis
-We explored relationships between student type, depression, and contributing factors.
+The analysis explores relationships between student type, depression, social connectedness, and acculturative stress. 
 
-- **Visualizations**: Highlight trends using charts  
-- **Focus areas**: Social connectedness, acculturative stress, length of stay
+- **Visualizations**: Charts highlight trends and patterns.
+- **Focus areas**: Social connectedness, acculturative stress, and length of stay.
 
-![Mental Health Chart](mentalhealth.jpg)
-
-This chart illustrates how depression scores vary with social connectedness and acculturative stress, highlighting risk factors among international students.
-
----
-
+### Example Charts
+ **Mental Health Overview by Length of Stay**  
+   ![Mental Health Chart](Mental_Health_Metrics.jpg)
+   This horizontal bar chart illustrates average depression (PHQ), social connectedness (SCS), and acculturative stress (ASISS) scores by length of stay, showing patterns in mental health outcomes based on time spent in Japan.
+   
 ## Key Findings
-- International students generally show higher depression scores (`todep`) compared to domestic students.  
-- Lower social connectedness (`tosc`) and higher acculturative stress (`toas`) correlate with higher depression scores.  
-- Length of stay (`stay`) appears to moderate depression: students staying longer tend to adapt better and show slightly lower depression scores.
-
----
+- International students generally report **higher depression scores** compared to domestic students.
+- **Lower social connectedness** and **higher acculturative stress** are correlated with higher depression scores.
+- **Length of stay** seems to moderate depression: students staying longer in Japan tend to adapt better and show slightly lower depression scores.
 
 ## Conclusion
-Understanding mental health patterns among international students helps universities:
+Understanding these patterns can help universities:
 
-- Identify students at risk  
-- Design targeted support programs  
+- Identify students at risk
+- Design targeted support programs
 - Improve overall student well-being
 
----
-
 ## How to Run
-1. Open the `notebook.ipynb` file in **Jupyter Notebook**, **VS Code**, or **Google Colab**.  
-2. Connect to a PostgreSQL database containing the `students` table.  
-3. Run queries to explore `tosc`, `toas`, `stay`, and `todep`.  
-4. Modify or extend queries to test new hypotheses or visualizations.
-
----
+1. Open `notebook.ipynb` in **Jupyter Notebook**, **VS Code**, or **Google Colab**.
+2. Connect to a **PostgreSQL** database containing the `students` table.
+3. Run queries to explore `tosc`, `toas`, `stay`, and `todep`.
+4. Modify or extend queries to test new hypotheses or create additional visualizations.
 
 ## Technologies Used
-- **PostgreSQL** – data querying and analysis  
-- **Python** – data manipulation and visualization  
-- **Pandas & Matplotlib / Seaborn** – for charts and graphs  
-- **Jupyter Notebook** – project workflow and documentation  
+- **PostgreSQL** – data querying and analysis
+- **Python** – data manipulation and visualization
+- **Pandas** & **Matplotlib / Seaborn** – charts and graphs
+- **Jupyter Notebook** – project workflow and documentation
 
 ---
 
-**Portfolio Notes:**  
-This README shows clear **data analysis skills**, ability to **visualize trends**, and proficiency in **PostgreSQL and Python**, making it ideal for showcasing to recruiters.
-
+**Portfolio Note:**  
+This project demonstrates skills in data analysis, visualization, and proficiency in PostgreSQL and Python, making it ideal for showcasing to recruiters or potential employers.
